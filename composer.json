@@ -36,7 +36,8 @@
   "repositories": [
     { "type": "composer", "url": "https://packages.drupal.org/8" },
     { "type": "path", "url": "./custom/modules/*"},
-    { "type": "path", "url": "./custom/themes/*"}
+    { "type": "path", "url": "./custom/themes/*"},
+    { "type": "path", "url": "./custom/profiles/*"}
   ],
   "scripts": {
     "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
@@ -47,9 +48,9 @@
     "installer-paths": {
       "build/core": ["type:drupal-core"],
       "build/libraries/{$name}": ["type:drupal-library"],
-      "build/modules/contrib/{$name}": ["type:drupal-module"],
-      "build/profiles/contrib/{$name}": ["type:drupal-profile"],
-      "build/themes/contrib/{$name}": ["type:drupal-theme"]
+      "build/modules/{$name}": ["type:drupal-module"],
+      "build/profiles/{$name}": ["type:drupal-profile"],
+      "build/themes/{$name}": ["type:drupal-theme"]
     }
   }
 }
